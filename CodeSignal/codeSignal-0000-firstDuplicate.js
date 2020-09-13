@@ -33,16 +33,9 @@ function firstDuplicate(a) {
 
     for (let i = 0; i < a.length; i++) {
         const val = Math.abs(a[i]);
-        // console.log(a)
-        // console.log( "a[i]: " + a[i])
-        // console.log("val: " + val)
-        // console.log("a[val - 1]: " + a[val - 1])
-
         if (a[val - 1] < 0) return val;
         a[val - 1] = -a[val - 1];
 
-        console.log(a)
-        console.log("------")
       }
       return -1;
 }

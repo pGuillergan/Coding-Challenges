@@ -1,3 +1,6 @@
+
+// rotateImage = a => a.map((row, rowIndex) => a.map(val => val[rowIndex]).reverse())
+
 function rotateImage(a) {
 
     const width = a[0].length
